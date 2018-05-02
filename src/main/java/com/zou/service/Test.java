@@ -12,9 +12,13 @@ public class Test {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring-configuration.xml");
 
-        HelloWorld helloWorld = (HelloWorld) context.getBean("helloworld");
+//        HelloWorld helloWorld = (HelloWorld) context.getBean("helloworld");
+//
+//        helloWorld.say();
 
-        helloWorld.say();
+
+        Work work = (Work) context.getBean("work");
+        work.doTest();
 
 
     }

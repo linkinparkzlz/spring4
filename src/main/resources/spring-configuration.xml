@@ -6,5 +6,12 @@
 
     <bean id="helloworld" class="com.zou.test.HelloWorld"></bean>
 
+    <bean id="person" class="com.zou.service.Person"></bean>
+
+    <bean id="work" class="com.zou.service.Work">
+
+        <property name="testInterface" ref="person"></property>
+    </bean>
+
 
 </beans>
