@@ -29,6 +29,13 @@ public class Test2 {
         //构造方法注入   索引注入
         People people4 = (People) context.getBean("people4");
         System.out.println(people4);
+
+
+        //工厂方法注入
+        People people6 = (People) context.getBean("people6");
+        System.out.println(people6);
+
+
     }
 
 

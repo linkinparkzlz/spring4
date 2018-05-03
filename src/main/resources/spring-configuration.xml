@@ -43,6 +43,12 @@
     </bean>
 
 
+    <!-- 工厂注入的方式 -->
+    <bean id="peopleFactory" class="com.zou.factory.PeopleFactory">
+    </bean>
+    <bean id="people6" factory-bean="peopleFactory" factory-method="createFactory"></bean>
+
+
 </beans>
 
 
