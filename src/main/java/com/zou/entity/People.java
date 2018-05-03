@@ -12,6 +12,16 @@ public class People {
     public People() {
     }
 
+
+    //构造方法注入需要的构造方法
+
+
+    public People(int id, String name, int age) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
+
     public int getId() {
         return id;
     }
