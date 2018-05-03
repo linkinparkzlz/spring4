@@ -67,6 +67,19 @@
     </bean>
 
 
+    <bean id="people9" class="com.zou.entity.People">
+
+        <property name="id" value="10"></property>
+        <property name="name" value="等等"></property>
+        <property name="age" value="33"></property>
+        <property name="dog">
+            <bean class="com.zou.entity.Dog">
+                <property name="name" value="Tom"></property>
+            </bean>
+        </property>
+    </bean>
+
+
 </beans>
 
 

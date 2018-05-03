@@ -45,7 +45,10 @@ public class Test2 {
         People people8 = (People) context.getBean("people8");
         System.out.println(people8);
 
+        //注入内部bean
 
+        People people9 = (People) context.getBean("people9");
+        System.out.println(people9);
 
 
 
