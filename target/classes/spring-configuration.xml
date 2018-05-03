@@ -13,5 +13,47 @@
         <property name="testInterface" ref="person"></property>
     </bean>
 
+    <!-- 装配一个bean -->
+    <bean id="people" class="com.zou.entity.People"></bean>
+
+    <!-- 注入属性 -->
+    <bean id="people2" class="com.zou.entity.People">
+
+        <property name="id" value="1"></property>
+        <property name="name" value="zhangsan"></property>
+        <property name="age" value="22"></property>
+    </bean>
+
 
 </beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
