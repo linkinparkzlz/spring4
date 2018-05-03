@@ -53,6 +53,20 @@
     </bean>
 
 
+    <bean id="dog1" class="com.zou.entity.Dog">
+        <property name="name" value="走走走"></property>
+    </bean>
+
+
+    <!--  属性注入 -->
+    <bean id="people8" class="com.zou.entity.People">
+        <property name="id" value="1"></property>
+        <property name="name" value="啥事"></property>
+        <property name="age" value="332"></property>
+        <property name="dog" ref="dog1"></property>
+    </bean>
+
+
 </beans>
 
 

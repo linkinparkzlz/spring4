@@ -8,6 +8,8 @@ public class People {
 
     private int age;
 
+    private Dog dog;
+
 
     public People() {
     }
@@ -20,6 +22,13 @@ public class People {
         this.id = id;
         this.name = name;
         this.age = age;
+    }
+
+    public People(int id, String name, int age, Dog dog) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.dog = dog;
     }
 
     public int getId() {
@@ -46,8 +55,17 @@ public class People {
         this.age = age;
     }
 
+
+    public Dog getDog() {
+        return dog;
+    }
+
+    public void setDog(Dog dog) {
+        this.dog = dog;
+    }
+
     @Override
     public String toString() {
-        return "id:   " + id + "name:    " + name + "age:    " + age;
+        return "id:   " + id + "name:    " + name + "age:    " + age + "dog: " + dog.getName();
     }
 }
