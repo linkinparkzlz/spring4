@@ -48,6 +48,10 @@
     </bean>
     <bean id="people6" factory-bean="peopleFactory" factory-method="createFactory"></bean>
 
+    <!-- 静态工厂注入 -->
+    <bean id="people7" class="com.zou.factory.PeopleFactory" factory-method="createStaticFactory">
+    </bean>
+
 
 </beans>
 

@@ -35,6 +35,11 @@ public class Test2 {
         People people6 = (People) context.getBean("people6");
         System.out.println(people6);
 
+        //静态工厂方法注入
+        People people7 = (People) context.getBean("people7");
+        System.out.println(people7);
+
+
 
     }
 

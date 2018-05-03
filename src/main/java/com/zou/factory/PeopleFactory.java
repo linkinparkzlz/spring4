@@ -16,6 +16,18 @@ public class PeopleFactory {
         return people;
     }
 
+
+    public static People createStaticFactory() {
+
+
+        People people = new People();
+        people.setId(7);
+        people.setName("高分");
+        people.setAge(999);
+
+        return people;
+    }
+
 }
 
 
